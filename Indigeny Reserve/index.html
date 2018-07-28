@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app="indigenyreserve">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Indigeny Reserve</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<!--Stylesheets-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monserrat|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<!--JavaScript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!--AngularJS-->
+		<script src="assets/js/angularjs/angular.min.js"></script>
+		<script src="assets/js/angularjs/angular-route.min.js"></script>
+<!--App-->
+		<script src="assets/js/indigenyreserve/indigenyreserve.module.js"></script>
+		<base href="/">
+	</head>
+	<body class="container-fluid" ng-controller="indexCtrl">
+
+		<!-- Modal -->
+		<div class="modal fade" id="ageRestriction" tabindex="-1" role="dialog" aria-labelledby="ageRestriction" aria-hidden="true" data-backdrop="static">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<h5>YOU MUST BE OF LEGAL DRINKING AND PURCHASING AGE IN YOUR COUNTRY TO ENTER THIS SITE.</h5>
+					  <form id="ageRestrictionForm" class="form-group form-check">
+					    <input type="checkbox" class="form-check-input" id="ageRestrictionCheck" required>
+					    <label class="form-check-label" for="ageRestrictionCheck">I am of legal drinking age</label>
+					  </div>
+					  <button id="ageRestrictionSubmit" type="submit" data-dismiss="">Submit</button>
+		      </form>
+		    </div>
+		  </div>
+		</div>
+
+		<header class="kitchen-img">
+			<nav id="nav" class="navbar navbar-expand-md col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<a class="col-6" href="/" class="navbar-brand"><img class="img-fluid" src="assets/images/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars fa-2x"></i>
+				</button>
+				<div id="navbarContent" class="collapse navbar-collapse col-md-6">
+					<ul class="navbar-nav justify-content-end">
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#shop" class="nav-link">Shop</a>
+						</li>
+						<li class="nav-item">
+							<a href="#visit" class="nav-link">Visit</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://www.facebook.com/IndigenyReserve/" class="nav-link"><i class="fab fa-facebook-f facebook"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div ng-view></div>
+
+		<footer class="apple-img row">
+			<div class="col-xl-3 offset-xl-3 col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-6 offset-sm-0 col-10 offset-1">
+				<p>&copy;2018 Indigeny Reserve - Sonora, CA<br>
+				All Rights Reserved</p>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 offset-sm-0 col-10 offset-1">
+				<p>Design by <a href="https://www.heatherchloe.com">Heather Chloe</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
