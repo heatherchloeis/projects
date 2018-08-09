@@ -1,0 +1,18 @@
+<main ng-controller="galleryCtrl">
+	<h1 class="text-center">Gallery</h1>
+	<div class="col-md-8 offset-md-2 col-10 offset-1">
+		<div class="row">
+			<div>
+				<img ng-repeat="img in images" class="col-md-4 col-sm-6 col-12" src="{{ img.url }}" data-target="#galleryModal" data-toggle="modal" data-index="{{ $index }}">
+			</div>
+		</div>
+	</div>
+
+	<div id="galleryModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div>
+				<img id="galleryImage" class="img-fluid" src="">
+			</div>
+		</div>
+	</div>
+</main>

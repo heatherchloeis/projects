@@ -1,0 +1,48 @@
+<main>
+	<div>
+		<h1 class="text-center">Come Visit Us</h1>
+		<p class="text-center col-10 offset-1">We are located in historic downtown Vacaville next to Damaged Lifestyle Tattoos and across the street from the restored Theatre DeVille.</p>
+		<div class="row">
+			<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-10 offset-1">
+				<h2 class="text-sm-center">So Lavish Salon &amp; Spa</h2>
+				<p class="text-sm-center">331 Main Street, Suite A<br>
+				Vacaville, CA 95688<br>
+				TELEPHONE: 707.999.5382<br>
+				EMAIL: <a href="mailto:solavishsalon@hotmail.com">solavishsalon@hotmail.com</a></p>
+
+				<h2 class="text-sm-center">Business Hours</h2>
+				<p class="text-sm-center">Monday CLOSED<br>
+				Tuesday - Wednesday 9 - 5PM<br>
+				Thursday - Friday 9 - 7PM<br>
+				Saturday 9 - 5PM<br>
+				Sunday 10 - 5PM</p>
+			</div>
+			<div class="col-lg-4 col-md-5">
+				<iframe class="embed-responsive embed-responsive-16by9" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12514.626183381157!2d-121.9891154!3d38.3569307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x365329c7cc9a92d4!2sSo+Lavish+Salon+%26+Spa!5e0!3m2!1sen!2sus!4v1516056659235" height="100%" frameborder="0" style="border:0; min-height: 300px" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div>
+			<h1 class="text-center">Subscribe</h1>
+			<p class="text-center col-10 offset-1">Sign Up for our Email List and be the first to know about special promotions, great deals, and upcoming salon events!</p>
+			<form class="col-10 offset-1" name="contactForm" ng-submit="submit(contactForm)">
+				<div class="row">
+					<div class="col-sm-6 col-12">
+						<label>First Name</label>
+						<input class="form-control" type="text" ng-model="contactData.first">
+					</div>
+					<div class="col-sm-6 col-12">
+						<label>Last Name</label>
+						<input class="form-control" type="text" ng-model="contactData.last">
+					</div>
+				</div>
+				<div class="col">
+					<label>Email Address</label>
+					<input class="form-control" type="text" ng-model="contactData.email">
+				</div>
+				<div class="col">
+					<button class="btn btn-primary" type="submit"><i class="fas fa-bolt"></i> &ensp; Subscribe</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>

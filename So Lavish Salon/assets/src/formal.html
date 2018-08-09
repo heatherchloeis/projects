@@ -1,0 +1,21 @@
+<main ng-controller="formalCtrl">
+	<h1 class="text-center">Our Formal and Event Hair and Makeup Services</h1>
+	<p class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 text-center">We require all clients to pay a 50% deposit on all formal and event hairstyling and makeup appointments. This deposit is due upon reservation. The remaining cost is due at appointment.</p>
+	<div ng-repeat="sections in formalServices">
+		<h2 class="text-center">{{ sections.heading }}</h2>
+		<p class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 text-center">{{ sections.desc }}</p>
+		<table class="col-md-4 offset-md-4 col-8 offset-2">
+			<tr ng-repeat="item in sections.services">
+				<td class="td-service">{{ item.service }}</td>
+				<td class="td-price">{{ item.price }}</td>
+			</tr>
+		</table>
+	</div>
+	<h2 class="text-center">Our Cancellation Policy</h2>
+	<p class="text-center">Cancellation 60+ days in advance: &emsp; 0% penalty<br>
+		Cancellation 45+ days in advance: &emsp; 50% penalty<br>
+		Cancellation 30+ days in advance: &emsp; 75% penalty<br>
+		Cancellation less than 30 days in advance: &emsp; 100% penalty</p>
+	<p class="text-center">♡ Flower Girl is defined here as those children 8 years old and younger ♡<br>
+	♡♡ add-on services available only with full hairstyling or makeup appointment ♡♡</p>
+</main>
